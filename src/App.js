@@ -1,3 +1,5 @@
+import React from 'react';
+
 function App() {
   return (
     <main>
@@ -18,6 +20,27 @@ function App() {
         <a href="https://github.com">GitHub</a>
         <a href="https://linkedin.com">LinkedIn</a>
       </div>
+
+      <form>
+        <label>
+          Name:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Interests:
+          <input type="checkbox" name="interests" value="React" />
+          React
+          <input type="checkbox" name="interests" value="JavaScript" />
+          JavaScript
+          <input type="checkbox" name="interests" value="Web Development" />
+          Web Development
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </main>
   );
 }
